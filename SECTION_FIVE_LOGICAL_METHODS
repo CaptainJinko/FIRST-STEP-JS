@@ -1,0 +1,133 @@
+//gameOver code A
+package biozonica.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+     boolean gameOver= true;
+     int score= 800;
+     int levelCompleted= 5;
+     int bonus= 100;
+     if(score < 5000 && score > 1000){
+         System.out.println("This was less than 5000 but greater than 1000");
+     } else if(score <1000){
+         System.out.println("Your score is less than 1000");
+     }else {
+         System.out.println("Got here");
+     }
+    }
+}
+
+**************************************************************************************************************************************
+//continuation of above code gameOver code B
+
+package biozonica.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+     boolean gameOver= true;
+     int score= 800;
+     int levelCompleted= 5;
+     int bonus= 100;
+     if(score < 5000 && score > 1000){
+         System.out.println("This was less than 5000 but greater than 1000");
+     } else if(score <1000){
+         System.out.println("Your score is less than 1000");
+     }else {
+         System.out.println("Got here");
+     }
+     if (gameOver){
+         int finalScore = score+(levelCompleted*bonus);
+         finalScore += 1000;
+         System.out.println("Your final score was = " +finalScore);
+     }
+    }
+}
+****************************************************************************************************************************************
+///continuation of above code gameOver code C
+package biozonica.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+     boolean gameOver= true;
+     int score= 800;
+     int levelCompleted= 5;
+     int bonus= 100;
+     if(score < 5000 && score > 1000){
+         System.out.println("This was less than 5000 but greater than 1000");
+     } else if(score <1000){
+         System.out.println("Your score is less than 1000");
+     }else {
+         System.out.println("Got here");
+     }
+     if (gameOver){
+         int finalScore = score+(levelCompleted*bonus);
+         finalScore += 1000;
+         System.out.println("Your final score was = " +finalScore);
+     }
+     boolean newGameOver = true;
+     int newScore = 10000;
+     int newLevelCompleted = 8;
+     int newBonus= 200;
+     if(newGameOver){
+         int finalScore= score+ (newLevelCompleted* newBonus);
+         System.out.println("Your final score was ="+ finalScore);
+     }
+    }
+}
+****************************************************************************************************************************************
+//convert one mile to 100 kilometers  a mile is 1.609344
+
+package biozonica.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // A mile is equal to 1.609344 kilomters
+      double kilometer = (100*1.609344);
+      int highScore = 50;
+
+      if(highScore == 50){
+          System.out.println("This an expression");
+      }
+    }
+}
+
+***************************************************************************************************************************************
+//method to calculate finalscore
+
+package biozonica.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+       boolean gameOver =  true;
+       int score= 800;
+       int levelCompleted = 5;
+       int bonus= 100;
+
+       calculateScore(gameOver, score, levelCompleted, bonus);
+
+       score= 10000;
+       levelCompleted= 8;
+       bonus = 200;
+
+       calculateScore(gameOver, score, levelCompleted, bonus);
+
+    }
+    public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus){
+        if(gameOver){
+            int finalScore= score+(levelCompleted *bonus);
+            finalScore+= 2000;
+            System.out.println("your final score "+finalScore);
+            return  finalScore;
+        }
+        return -1;
+    }
+}
+
+***************************************************************************************************************************************
+
+
