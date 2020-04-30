@@ -413,21 +413,7 @@ package com.timbuchalka;
 public class Main {
 
     public static void main(String[] args) {
-        boolean gameOver = true;
-        int score = 800;
-        int levelCompleted = 5;
-        int bonus = 100;
-
-        int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
-        System.out.println("Your final score was " + highScore);
-
-        score = 10000;
-        levelCompleted = 8;
-        bonus = 200;
-
-        highScore = calculateScore(gameOver, score, levelCompleted, bonus);
-        System.out.println("Your final score was " + highScore);
-
+         
         // Create a method called displayHighScorePosition
         // it should a players name as a parameter, and a 2nd parameter as a position in the high score table
         // You should display the players name along with a message like " managed to get into position " and the
@@ -484,17 +470,6 @@ public class Main {
             return 4;
         }
     }
-
-    public static int calculateScore(boolean gameOver,int score, int levelCompleted, int bonus) {
-
-        if(gameOver) {
-            int finalScore = score + (levelCompleted * bonus);
-            finalScore += 2000;
-            return finalScore;
-        }
-
-        return -1;
-    }
 }
 ****************************************************************************************************************************************
 //myPractise
@@ -502,24 +477,16 @@ package biozonica.company;
 
 public class Main {
     public static void main(String[] args){
-         boolean gameOver = true;
-         int score = 800;
-         int levelCompleted = 5;
-         int bonus= 100;
+          
 
-         int highScore= calculateScore(gameOver,score,levelCompleted,bonus);
-          score =1000;
-          levelCompleted= 8;
-          bonus= 200;
+        int highScorePosition= calculateHighScorePosition(1500);
+        displayHighScorePosition("Elias",highScorePosition);
 
-          int highScorePosition= calculateHighScorePosition(1500);
-          displayHighScorePosition("Elias",highScorePosition);
+        highScorePosition= calculateHighScorePosition(900);
+        displayHighScorePosition("ZamQras",highScorePosition);
 
-          highScorePosition= calculateHighScorePosition(900);
-          displayHighScorePosition("ZamQras",highScorePosition);
-
-         highScorePosition= calculateHighScorePosition(400);
-         displayHighScorePosition("Mohammed",highScorePosition);
+        highScorePosition= calculateHighScorePosition(400);
+        displayHighScorePosition("Mohammed",highScorePosition);
 
         highScorePosition= calculateHighScorePosition(50);
         displayHighScorePosition("Talha",highScorePosition);
@@ -542,13 +509,5 @@ public class Main {
             return 4;
         }
     }
-    public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus){
-        if(gameOver){
-            int finalScore= score+(levelCompleted*bonus);
-            finalScore+=2000;
-            return finalScore;
-        }
-        return  -1;
-    }
+     
 }
-
