@@ -1,0 +1,32 @@
+//METHODS TEXT IN MAIN 
+public class Main {
+    public static void main(String[] args) {
+        long milesPerHour= SpeedConverter.toMilesPerHour(10.6);
+        System.out.println("Miles"+milesPerHour);
+        SpeedConverter.printConversion(10.6);
+    }
+}
+
+.........................................................................................................................................
+public class SpeedConverter {
+    public static void main(String[] args) {
+
+    }
+    public static long toMilesPerHour(double kilometersPerHour){
+        if(kilometersPerHour<0){
+            return -1;
+        }
+     return Math.round(kilometersPerHour/1.609);
+    }
+    public static void printConversion(double kilomtersPerHour){
+        if(kilomtersPerHour <0 ){
+            System.out.println("Invalid Value");
+        }else {
+            long milesPerHour= toMilesPerHour(kilomtersPerHour);
+            System.out.println(kilomtersPerHour+"Km/h"+milesPerHour+"mi/h");
+        }
+    }
+
+  }
+
+**************************************************************************************************************************************
