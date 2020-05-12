@@ -56,5 +56,65 @@ public class Main {
         return (amount * (interestRate/100));
    }
 }
+------------------------------------------------------------------------------------
+//LOOPS: FOR LOOP/ WHILE LOOP AND DO WHILE
+package biozonica.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("100,000 at 2% interest = " +calculateInterestRate(10000.0, 2.0));
+  }
+  public static double calculateInterestRate(double amount, double interestRate){
+        return (amount * (interestRate/100));
+  }
+}
+
+..................................................................................................
+package biozonica.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("100,000 at 2% interest = " +calculateInterestRate(10000.0, 2.0));
+        System.out.println("100,000 at 3% interest = " +calculateInterestRate(10000.0, 3.0));
+        System.out.println("100,000 at 4% interest = " +calculateInterestRate(10000.0, 4.0));
+        System.out.println("100,000 at 5% interest = " +calculateInterestRate(10000.0, 5.0));
+  }
+  public static double calculateInterestRate(double amount, double interestRate){
+        return (amount * (interestRate/100));
+  }
+}
+
+//The above example is not loop but to compare how using loop would have been better and efficient. if we have 100 interest 
+//rate, it will bge difficult. so We use loop in this situation. the next example will be clear 
+************************************************************************************
+package biozonica.company;
+
+public class Main {
+    public static void main(String[] args) {
+        for (int i=0; i<5; i++){
+            System.out.println("Loop " + i + " Hello");
+        }
+   }
+  public static double calculateInterest(double amount, double interestRate){
+        return (amount * (interestRate/100));
+  }
+}
+
+----------------------------------------------------------------------------
+package biozonica.company;
+
+public class Main {
+    public static void main(String[] args) {
+        for (int i=0; i<9; i++){
+            System.out.println("10000 at "+i+" % interest"+String.format("%.2f",calculateInterest(10000.0, i)));
+        }
+    }
+   public static double calculateInterest(double amount, double interestRate){
+        return (amount * (interestRate/100));
+   }
+}
+
 
 
