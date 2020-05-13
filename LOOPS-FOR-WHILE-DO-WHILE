@@ -11,7 +11,7 @@ public class Main {
   }
 }
 
-..................................................................................................
+.........................................................................................................................................
 package biozonica.company;
 
 public class Main {
@@ -29,7 +29,7 @@ public class Main {
 
 //The above example is not loop but to compare how using loop would have been better and efficient. if we have 100 interest 
 //rate, it will bge difficult. so We use loop in this situation. the next example will be clear 
-************************************************************************************
+****************************************************************************************************************************************
 package biozonica.company;
 
 public class Main {
@@ -43,7 +43,7 @@ public class Main {
   }
 }
 
-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
 package biozonica.company;
 
 public class Main {
@@ -56,7 +56,7 @@ public class Main {
         return (amount * (interestRate/100));
    }
 }
-------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
 //LOOPS: FOR LOOP/ WHILE LOOP AND DO WHILE
 package biozonica.company;
 
@@ -70,7 +70,7 @@ public class Main {
   }
 }
 
-..................................................................................................
+.........................................................................................................................................
 package biozonica.company;
 
 public class Main {
@@ -88,7 +88,7 @@ public class Main {
 
 //The above example is not loop but to compare how using loop would have been better and efficient. if we have 100 interest 
 //rate, it will bge difficult. so We use loop in this situation. the next example will be clear 
-************************************************************************************
+****************************************************************************************************************************************
 package biozonica.company;
 
 public class Main {
@@ -102,7 +102,7 @@ public class Main {
   }
 }
 
-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
  // using the for statement, call the calculateInterest method with
         // the amount of 10000 with an interestRate of 2,3,4,5,6,7, and 8
         // and print the results to the console window.
@@ -116,7 +116,7 @@ public class Main {
     // number of prime numbers found
     // if that count is 3 exit the for loop
     // hint:  Use the break; statement to exit
-  ...............................................................................
+  .....................................................................................................................................
 package biozonica.company;
 
 public class Main {
@@ -129,6 +129,14 @@ public class Main {
         return (amount * (interestRate/100));
    }
 }
-
+*****************************************************************************************************************************************
+    // Create a for statement using any range of numbers
+    // Determine if the number is a prime number using the isPrime method
+    // if it is a prime number, print it out AND increment a count of the
+    // number of prime numbers found
+    // if that count is 3 exit the for loop
+    // hint:  Use the break; statement to exit
+    
+    
 
 
