@@ -278,6 +278,11 @@ public class Main {
 }
 ----------------------------------------------------------------------------------------------------------------------------------------
 //CHALLENGE 67 OF WHILE LOOP
+//Create a method called isEvenNumber that takes a parameter of type int. 
+//Its purpose is to determine if the argument passed to the method is
+//an even number or not.
+// return true if an even number, otherwise return false:
+
 package biozonica.company;
 
 public class Main {
